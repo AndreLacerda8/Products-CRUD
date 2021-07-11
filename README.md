@@ -54,3 +54,6 @@ As ferramentas utilizadas nesse projeto foram:
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
 - [React](https://pt-br.reactjs.org/)
+
+
+OBSERVAÇÃO: é necessário o arquivo serviceAccountKey.json, que é importado no db.js, para se comunicar com o banco de dados, portanto você pode criar seu projeto no firestore e pegar esse arquivo lá.
