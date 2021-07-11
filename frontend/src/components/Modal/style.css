@@ -1,0 +1,127 @@
+.bg-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--black-modal);
+
+    z-index: 100;
+}
+
+.modal{
+    background-color: var(--black-dark);
+    color: var(--white);
+    margin: 0 auto;
+    margin-top: 50vh;
+    padding-top: 2.5rem;
+    transform: translateY(-12rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: min(30rem, 80vw);
+    height: 23rem;
+}
+
+.modal form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+}
+
+.modal form label{
+    width: 100%;
+}
+
+.modal form input{
+    margin: .5rem 0;
+    padding: .3rem;
+    width: 100%;
+}
+
+.modal form .buttons{
+    margin-top: 1.8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal form button{
+    display: inline-block;
+    padding: .7rem;
+    width: 50%;
+
+    background-color: var(--blue);
+    color: var(--white);
+
+    cursor: pointer;
+
+    border: 1px solid var(--black-medium);
+    border-radius: .4rem;
+
+    transition: filter .3s;
+
+    font-size: 1.1rem;
+}
+
+.modal .buttons button:last-child{
+    margin-left: 1rem;
+    background-color: var(--red);
+}
+
+.modal .buttons button:hover{
+    filter: brightness(1.2);
+}
+
+@media(max-width: 500px){
+    .modal{
+        padding-top: 1.5rem;
+    }
+
+    .modal form .buttons{
+        margin-top: .5rem;
+        flex-direction: column;
+    }
+
+    .modal form .buttons button{
+        width: 100%;
+    }
+
+    .modal .buttons button:last-child{
+        margin-left: 0;
+        margin-top: .5rem;
+    }
+}
+
+
+.modal-message{
+    position: fixed;
+    left: -5rem;
+    top: 5rem;
+    opacity: 0;
+
+    border-radius: .8rem;
+    padding: 1rem 2rem;
+
+    background-color: var(--blue);
+
+    transition: .5s;
+
+    z-index: 300;
+}
+
+.modal-message.show{
+    left: 2rem;
+    opacity: .9;
+}
+
+.modal-message.show.red{
+    background-color: var(--red);
+}

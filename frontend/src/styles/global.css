@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black-light: #4b4b4b;
+    --black-modal: #111111cc;
+    --black-medium: #313131;
+    --black-dark: #222;
+
+    --white: #e7e7e7;
+
+    --blue: #0559b9;
+    --red: #880707;
+}
+
+h1, h3, p, span{
+    color: var(--white);
+}
+
+
+@media(max-width: 1080px){
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width: 728px){
+    html{
+        font-size: 87.5%;
+    }
+}

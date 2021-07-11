@@ -1,0 +1,33 @@
+.options{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+.addProduct{
+    display: inline-block;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+
+    border: 2px solid var(--black-dark);
+    border-radius: .7rem;
+
+    color: var(--white);
+    background-color: var(--black-medium);
+
+    cursor: pointer;
+    transition: filter .3s;
+}
+
+.addProduct:hover{
+    filter: brightness(1.2);
+}
+
+@media(max-width: 500px){
+    .options{
+        justify-content: center;
+    }
+}
