@@ -70,7 +70,7 @@ export function ModalProduct(){
                     <label>
                         Preço:
                         <br />
-                        <input required type='number' placeholder='0.00' min={0} name='price' value={price} disabled={method === 'delete'} onChange={event=> setData('price', event.target.value)} />
+                        <input required type='number' placeholder='0.00' min={0} step='any' name='price' value={price} disabled={method === 'delete'} onChange={event=> setData('price', event.target.value)} />
                     </label>
                     <label>
                         URL da Imagem:
