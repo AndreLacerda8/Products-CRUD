@@ -65,17 +65,17 @@ export function ModalProduct(){
                     <label>
                         Nome:
                         <br />
-                        <input required type='text' name='name' value={productName} disabled={method === 'delete'} onChange={event => setData('name', event.target.value)} />
+                        <input required type='text' name='name' placeholder='Nome do Produto' value={productName} disabled={method === 'delete'} onChange={event => setData('name', event.target.value)} />
                     </label>
                     <label>
                         Preço:
                         <br />
-                        <input required type='number' name='price' value={price} disabled={method === 'delete'} onChange={event=> setData('price', event.target.value)} />
+                        <input required type='number' placeholder='0.00' min={0} name='price' value={price} disabled={method === 'delete'} onChange={event=> setData('price', event.target.value)} />
                     </label>
                     <label>
                         URL da Imagem:
                         <br />
-                        <input required type='url' name='image' value={image} disabled={method === 'delete'} onChange={event=>setData('image', event.target.value)} />
+                        <input required type='url' placeholder='https://example.com' name='image' value={image} disabled={method === 'delete'} onChange={event=>setData('image', event.target.value)} />
                     </label>
                     <div className='buttons'>
                         <button type='submit'>

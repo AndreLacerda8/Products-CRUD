@@ -46,9 +46,15 @@ module.exports = {
 
     async update(req, res){
         if(req.body.productName == '' ||
+            req.body.productName.trim() == '' ||
             req.body.price == '' ||
-            req.body.image == ''){
+            req.body.image == '' ||
+            req.body.image.trim() == ''){
                 return res.send('Preencha todos os campos') 
+        }
+
+        if(Number(req.body.price) < 0){
+            return res.send('Coloque um valor positivo')
         }
 
         if(req.body.productId == '') return res.send('Algo deu errado, tente novamente!')
